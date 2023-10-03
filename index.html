@@ -4,48 +4,67 @@
     <title>Calculator App</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="styles.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="js/script.js"></script>
   </head>
   <body>
     <div class="calculator">
       <div class="input">
-        <input type="number" class="input__number input__number-top" />
-        <input type="number" class="input__number input__number-bottom" />
+        <!-- <input -->
+        <!--   type="number" -->
+        <!--   class="input__number input__number-top" -->
+        <!--   data-name="previous" -->
+        <!-- /> -->
+        <!-- <input -->
+        <!--   type="number" -->
+        <!--   class="input__number input__number-bottom" -->
+        <!--   data-name="current" -->
+        <!-- /> -->
+        <p
+          type="number"
+          class="input__number input__number-top"
+          data-name="previous"
+        ></p>
+        <p
+          type="number"
+          class="input__number input__number-bottom"
+          data-name="current"
+        ></p>
       </div>
       <!--input-->
       <div class="numbers">
         <div class="numbers__row numbers__row--1">
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
+          <div class="numbers__number">7</div>
+          <div class="numbers__number">8</div>
+          <div class="numbers__number">9</div>
           <div class="numbers__delete" data-name="delete">del</div>
         </div>
         <!--row1-->
         <div class="numbers__row numbers__row--2">
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>+</div>
+          <div class="numbers__number">4</div>
+          <div class="numbers__number">5</div>
+          <div class="numbers__number">6</div>
+          <div data-name="addition" class="operation">+</div>
         </div>
         <!--row2-->
         <div class="numbers__row numbers__row--3">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>-</div>
+          <div class="numbers__number">1</div>
+          <div class="numbers__number">2</div>
+          <div class="numbers__number">3</div>
+          <div data-name="substraction" class="operation">-</div>
         </div>
         <!--row3-->
         <div class="numbers__row numbers__row--4">
-          <div>.</div>
-          <div>0</div>
-          <div>/</div>
-          <div>x</div>
+          <div data-name="dod">.</div>
+          <div class="numbers__number">0</div>
+          <div data-name="division" class="operation">/</div>
+          <div data-name="multiplication" class="operation">x</div>
         </div>
         <!--row4-->
         <div class="numbers__row numbers__row--5">
