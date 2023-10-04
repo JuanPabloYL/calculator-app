@@ -13,7 +13,6 @@ A simple calculator web application built with HTML, CSS, and JavaScript.
 - Addition, subtraction, multiplication, and division operations.
 - Clear and reset functionality.
 - Error handling for division by zero.
-- Responsive design for various screen sizes.
 
 ## Getting Started
 
